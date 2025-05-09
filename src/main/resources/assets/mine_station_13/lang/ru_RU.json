@@ -1,4 +1,7 @@
 {
   "item.mine_station_13.pink_garnet": "Розовый гранат",
-  "item.mine_station_13.raw_pink_garnet": "Рудный розовый гранат"
+  "item.mine_station_13.raw_pink_garnet": "Рудный розовый гранат",
+
+  "block.mine_station_13.pink_garnet_block": "Блок розового граната",
+  "block.mine_station_13.raw_pink_garnet_block": "Блок рудного розового граната"
 }
