@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "mine-station-13",
+	"id": "mine_station_13",
 	"version": "${version}",
 	"name": "Mine Station 13",
 	"description": "Try to add feacures from Space Station 13/14",
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/mine-station-13/icon.png",
+	"icon": "assets/mine_station_13/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
