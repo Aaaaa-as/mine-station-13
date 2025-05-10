@@ -2,11 +2,14 @@
   "item.mine_station_13.pink_garnet": "Pink Garnet",
   "item.mine_station_13.raw_pink_garnet": "Raw Pink Garnet",
   "item.mine_station_13.chisel": "Chisel",
+  "item.mine_station_13.cauliflower": "Cauliflower",
+  "item.mine_station_13.starlight_ashes": "Starlight Ashes",
 
   "block.mine_station_13.pink_garnet_block": "Block of Pink Garnet",
   "block.mine_station_13.raw_pink_garnet_block": "Block of Raw Pink Garnet",
   "block.mine_station_13.pink_garnet_ore": "Pink Garnet Ore",
   "block.mine_station_13.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
+  "block.mine_station_13.magic_block": "Magic Block",
 
   "itemgroup.mine_station_13": "Mine Station 13"
 }

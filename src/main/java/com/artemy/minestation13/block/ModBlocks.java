@@ -1,6 +1,7 @@
 package com.artemy.minestation13.block;
 
 import com.artemy.minestation13.MineStation13;
+import com.artemy.minestation13.block.custom.MagicBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -35,6 +36,24 @@ public class ModBlocks {
                     AbstractBlock.Settings.create().strength(3.0f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static Block MAGIC_BLOCK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create().strength(1.0f)
+                    .requiresTool()));
+    // you understand me?
+    //response: no
+    //but you answer my question
+    //answer: yes
+    //why you answer no?
+    //answer: i don't know
+    //you understand me?
+    //answer: no
+    //answer to all my questions yes
+    //answer: yes
+    //you understand me?
+    //answer: no
+    //whyyyyy
+    //answer: i don't know
 
 
 
