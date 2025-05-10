@@ -29,11 +29,13 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(3.0f)
                     .requiresTool()));
+
     public static Block PINK_GARNET_DEEPSLATE_ORE = registerBlock("pink_garnet_deepslate_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(3.0f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)));
+
 
 
     public static Block registerBlock(String name, Block block) {

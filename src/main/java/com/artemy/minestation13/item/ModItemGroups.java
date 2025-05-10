@@ -25,6 +25,7 @@ public class ModItemGroups {
                                 entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
                                 entries.add(ModBlocks.PINK_GARNET_ORE);
                                 entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+                                entries.add(ModItems.CHISEL);
                             })).build());
 
     public static void registerModItemGroups() {
