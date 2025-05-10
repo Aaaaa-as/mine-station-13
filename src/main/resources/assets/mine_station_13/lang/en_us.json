@@ -4,6 +4,8 @@
 
   "block.mine_station_13.pink_garnet_block": "Block of Pink Garnet",
   "block.mine_station_13.raw_pink_garnet_block": "Block of Raw Pink Garnet",
+  "block.mine_station_13.pink_garnet_ore": "Pink Garnet Ore",
+  "block.mine_station_13.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
 
   "itemgroup.mine_station_13": "Mine Station 13"
 }

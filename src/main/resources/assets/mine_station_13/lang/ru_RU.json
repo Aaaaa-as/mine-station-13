@@ -4,6 +4,8 @@
 
   "block.mine_station_13.pink_garnet_block": "Блок розового граната",
   "block.mine_station_13.raw_pink_garnet_block": "Блок рудного розового граната",
+  "block.mine_station_13.pink_garnet_ore": "Руда розового граната",
+  "block.mine_station_13.pink_garnet_deepslate_ore": "Глубинная руда розового граната",
 
   "itemgroup.mine_station_13": "Mine Station 13"
 }
