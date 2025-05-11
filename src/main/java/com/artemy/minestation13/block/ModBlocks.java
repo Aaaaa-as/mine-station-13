@@ -2,10 +2,9 @@ package com.artemy.minestation13.block;
 
 import com.artemy.minestation13.MineStation13;
 import com.artemy.minestation13.block.custom.MagicBlock;
+import com.artemy.minestation13.block.custom.PinkGarnetLampBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -40,21 +39,48 @@ public class ModBlocks {
     public static Block MAGIC_BLOCK = registerBlock("magic_block",
             new MagicBlock(AbstractBlock.Settings.create().strength(1.0f)
                     .requiresTool()));
-    // you understand me?
-    //response: no
-    //but you answer my question
-    //answer: yes
-    //why you answer no?
-    //answer: i don't know
-    //you understand me?
-    //answer: no
-    //answer to all my questions yes
-    //answer: yes
-    //you understand me?
-    //answer: no
-    //whyyyyy
-    //answer: i don't know
 
+    public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
+            new StairsBlock(PINK_GARNET_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2.0f)
+                    .requiresTool()));
+    public static final Block PINK_GARNET_SLAB = registerBlock("pink_garnet_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2.0f)
+                    .requiresTool()));
+
+    public static final Block PINK_GARNET_BUTTON = registerBlock("pink_garnet_button",
+            new ButtonBlock(BlockSetType.IRON,4,
+                    AbstractBlock.Settings.create().strength(2.0f).noCollision()
+                            .requiresTool()));
+    public static final Block PINK_GARNET_PRESSURE_PLATE = registerBlock("pink_garnet_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON,
+                    AbstractBlock.Settings.create().strength(2.0f)
+                            .requiresTool()));
+
+    public static final Block PINK_GARNET_FENCE = registerBlock("pink_garnet_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2.0f)
+                    .requiresTool()));
+    public static final Block PINK_GARNET_FENCE_GATE = registerBlock("pink_garnet_fence_gate",
+            new FenceGateBlock(WoodType.OAK,
+                    AbstractBlock.Settings.create().strength(2.0f)
+                            .requiresTool()));
+    public static final Block PINK_GARNET_WALL = registerBlock("pink_garnet_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2.0f)
+                    .requiresTool()));
+
+    public static final Block PINK_GARNET_DOOR = registerBlock("pink_garnet_door",
+            new DoorBlock(BlockSetType.STONE,
+                    AbstractBlock.Settings.create().strength(2.0f).nonOpaque()
+                            .requiresTool()));
+    public static final Block PINK_GARNET_TRAPDOOR = registerBlock("pink_garnet_trapdoor",
+            new TrapdoorBlock(BlockSetType.STONE,
+                    AbstractBlock.Settings.create().strength(2.0f).nonOpaque()
+                            .requiresTool()));
+
+    public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",
+            new PinkGarnetLampBlock(AbstractBlock.Settings.create().strength(2.0f).nonOpaque()
+                    .luminance((state) -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)
+                    .requiresTool()));
 
 
     public static Block registerBlock(String name, Block block) {

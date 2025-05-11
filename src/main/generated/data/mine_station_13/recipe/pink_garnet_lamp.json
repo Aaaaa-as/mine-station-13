@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mine_station_13:pink_garnet"
+    },
+    "L": {
+      "item": "minecraft:redstone_lamp"
+    }
+  },
+  "pattern": [
+    "###",
+    "#L#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mine_station_13:pink_garnet_lamp"
+  }
+}

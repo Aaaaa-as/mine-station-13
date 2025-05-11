@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mine_station_13:block/pink_garnet_slab"
+    },
+    "type=double": {
+      "model": "mine_station_13:block/pink_garnet_block"
+    },
+    "type=top": {
+      "model": "mine_station_13:block/pink_garnet_slab_top"
+    }
+  }
+}
