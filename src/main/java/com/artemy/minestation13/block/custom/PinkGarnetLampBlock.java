@@ -17,6 +17,7 @@ public class PinkGarnetLampBlock extends Block {
 
     public PinkGarnetLampBlock(Settings settings) {
         super(settings);
+        setDefaultState(this.getDefaultState().with(CLICKED, false));
     }
 
     @Override
