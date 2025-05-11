@@ -1,6 +1,7 @@
 package com.artemy.minestation13.item.custom;
 
 import com.artemy.minestation13.block.ModBlocks;
+import com.artemy.minestation13.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -43,6 +44,7 @@ public class ChiselItem extends Item {
                 context.getStack().damage(1,((ServerWorld) world),((ServerPlayerEntity) context.getPlayer()),
                         item -> Objects.requireNonNull(context.getPlayer()).sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                context.getStack().set(ModDataComponentTypes.POSITION, context.getBlockPos());
             }
         }
 
@@ -55,6 +57,9 @@ public class ChiselItem extends Item {
             tooltip.add(Text.translatable("tooltip.mine_station_13.chisel.info"));
         }else {
             tooltip.add(Text.translatable("tooltip.mine_station_13.press_shift"));
+        }
+        if (stack.get(ModDataComponentTypes.POSITION)!=null) {
+            tooltip.add(Text.literal("Last block changed at:"+stack.get(ModDataComponentTypes.POSITION).toString()));
         }
     }
 }

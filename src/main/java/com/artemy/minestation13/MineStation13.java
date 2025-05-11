@@ -1,6 +1,7 @@
 package com.artemy.minestation13;
 
 import com.artemy.minestation13.block.ModBlocks;
+import com.artemy.minestation13.component.ModDataComponentTypes;
 import com.artemy.minestation13.item.ModItemGroups;
 import com.artemy.minestation13.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -20,6 +21,8 @@ public class MineStation13 implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 	}
