@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mine_station_13:block/pink_garnet_ore"
+  }
+}
