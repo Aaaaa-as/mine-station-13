@@ -1,6 +1,5 @@
 package com.artemy.minestation13.block.custom;
 
-import com.artemy.minestation13.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -17,8 +16,11 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import com.artemy.minestation13.util.ModTags;
 
 import java.util.List;
+
+
 
 public class MagicBlock extends Block {
     public MagicBlock(Settings settings) {
@@ -36,7 +38,7 @@ public class MagicBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
-            if(itemEntity.getStack().getItem() == ModItems.RAW_PINK_GARNET) {
+            if(itemEntity.getStack().isIn(ModTags.Items.MAGIC_TRANSFORMABLE_ITEMS)) {
                 itemEntity.setStack(new ItemStack(Items.LAPIS_LAZULI, itemEntity.getStack().getCount()));
             }
         }
