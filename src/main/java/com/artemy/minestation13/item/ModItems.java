@@ -2,6 +2,7 @@ package com.artemy.minestation13.item;
 
 import com.artemy.minestation13.MineStation13;
 import com.artemy.minestation13.item.custom.ChiselItem;
+import com.artemy.minestation13.item.custom.HammerItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -35,6 +36,9 @@ public class ModItems {
 
     public static final Item PINK_GARNET_SHOVEL = registerItem("pink_garnet_shovel", new ShovelItem(ModToolMaterials.PINK_GARNET,new Item.Settings()
             .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,1.5f,-3.0f))));
+
+    public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer", new HammerItem(ModToolMaterials.PINK_GARNET,new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,7f,-4.0f))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MineStation13.MOD_ID, name), item);
