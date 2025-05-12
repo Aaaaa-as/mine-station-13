@@ -42,6 +42,11 @@ public class ModItemGroups {
                                 entries.add(ModBlocks.MAGIC_BLOCK);
                                 entries.add(ModBlocks.PINK_GARNET_ORE);
                                 entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+                                entries.add(ModItems.PINK_GARNET_SWORD);
+                                entries.add(ModItems.PINK_GARNET_PICKAXE);
+                                entries.add(ModItems.PINK_GARNET_SHOVEL);
+                                entries.add(ModItems.PINK_GARNET_AXE);
+                                entries.add(ModItems.PINK_GARNET_HOE);
                                 entries.add(ModItems.CHISEL);
                                 entries.add(ModItems.CAULIFLOWER);
                                 entries.add(ModItems.STARLIGHT_ASHES);
