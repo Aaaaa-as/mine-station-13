@@ -14,7 +14,7 @@ public class ModDataComponentTypes {
     public static final ComponentType<BlockPos> POSITION = register("position", builder -> builder.codec(BlockPos.CODEC));
 
 
-    private static <T>ComponentType<T> register (String name, UnaryOperator<ComponentType.Builder<T>> builderOperator){
+    private static <T>ComponentType<T> register (@SuppressWarnings("SameParameterValue") String name, UnaryOperator<ComponentType.Builder<T>> builderOperator){
         return Registry.register(Registries.DATA_COMPONENT_TYPE, Identifier.of(MineStation13.MOD_ID, name), builderOperator.apply(ComponentType.builder()).build());
     }
 

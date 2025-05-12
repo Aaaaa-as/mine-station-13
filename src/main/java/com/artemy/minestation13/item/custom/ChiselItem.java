@@ -59,6 +59,7 @@ public class ChiselItem extends Item {
             tooltip.add(Text.translatable("tooltip.mine_station_13.press_shift"));
         }
         if (stack.get(ModDataComponentTypes.POSITION)!=null) {
+            //noinspection DataFlowIssue
             tooltip.add(Text.literal("Last block changed at:"+stack.get(ModDataComponentTypes.POSITION).toString()));
         }
     }

@@ -19,6 +19,7 @@ public class ModTags {
     public static class Items {
         public static final TagKey<Item> MAGIC_TRANSFORMABLE_ITEMS = createTag("magic_transformable_items");
 
+        @SuppressWarnings("SameParameterValue")
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(MineStation13.MOD_ID, name));
         }

@@ -10,8 +10,6 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import java.util.List;
-
 public class PinkGarnetLampBlock extends Block {
     public static final BooleanProperty CLICKED = BooleanProperty.of("clicked");
 
