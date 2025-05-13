@@ -3,6 +3,7 @@ package com.artemy.minestation13.item;
 import com.artemy.minestation13.MineStation13;
 import com.artemy.minestation13.item.custom.ChiselItem;
 import com.artemy.minestation13.item.custom.HammerItem;
+import com.artemy.minestation13.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -41,8 +42,8 @@ public class ModItems {
             .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,7f,-4.0f))));
 
     public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,
-            ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(33))));
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,
+                    ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(33))));
 
     public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
             new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,
