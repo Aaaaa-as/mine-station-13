@@ -17,7 +17,7 @@ import java.util.function.Supplier;
 
 public class ModArmorMaterials {
 
-    public static final RegistryEntry<ArmorMaterial> PINK_GARNET_ARMOR_MATERIAL = registerArmorMaterial("pink_garnet_armor_material",
+    public static final RegistryEntry<ArmorMaterial> PINK_GARNET_ARMOR_MATERIAL = registerArmorMaterial("pink_garnet",
             ()->new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class),map->{
                 map.put(ArmorItem.Type.BOOTS, 3);
                 map.put(ArmorItem.Type.LEGGINGS, 6);
