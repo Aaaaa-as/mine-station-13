@@ -53,6 +53,7 @@ public class ModItemGroups {
                                 entries.add(ModItems.PINK_GARNET_CHESTPLATE);
                                 entries.add(ModItems.PINK_GARNET_LEGGINS);
                                 entries.add(ModItems.PINK_GARNET_BOOTS);
+                                entries.add(ModItems.PINK_GARNET_HORSE_ARMOR);
                                 entries.add(ModItems.CAULIFLOWER);
                                 entries.add(ModItems.STARLIGHT_ASHES);
                             })).build());
