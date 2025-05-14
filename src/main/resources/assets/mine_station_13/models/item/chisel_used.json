@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "mine_station_13:item/chisel"
+    "layer0": "mine_station_13:item/chisel_used"
   }
 }
