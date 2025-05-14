@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.resource.featuretoggle.FeatureFlag;
 import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.util.Identifier;
 
@@ -65,6 +64,9 @@ public class ModItems {
 
     public static final Item KAUPEN_SMITHING_TEMPLATE = registerItem("kaupen_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(MineStation13.MOD_ID,"kaupen"), FeatureFlags.VANILLA));
+
+    public static final Item KAUPEN_BOW = registerItem("kaupen_bow",
+            new BowItem(new Item.Settings().maxDamage(500)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MineStation13.MOD_ID, name), item);

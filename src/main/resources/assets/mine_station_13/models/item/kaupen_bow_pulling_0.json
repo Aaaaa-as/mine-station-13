@@ -1,0 +1,6 @@
+{
+  "parent": "mine_station_13:item/kaupen_bow",
+  "textures": {
+    "layer0": "mine_station_13:item/kaupen_bow_pulling_0"
+  }
+}

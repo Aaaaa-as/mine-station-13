@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
+    @SuppressWarnings("unused")
     public static final ItemGroup MINE_STATION_13_GROUP =
             Registry.register(Registries.ITEM_GROUP,
                     Identifier.of(MineStation13.MOD_ID, "mine_station_13"),
@@ -43,6 +44,7 @@ public class ModItemGroups {
                                 entries.add(ModBlocks.PINK_GARNET_ORE);
                                 entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
                                 entries.add(ModItems.PINK_GARNET_SWORD);
+                                entries.add(ModItems.KAUPEN_BOW);
                                 entries.add(ModItems.PINK_GARNET_PICKAXE);
                                 entries.add(ModItems.PINK_GARNET_SHOVEL);
                                 entries.add(ModItems.PINK_GARNET_AXE);
