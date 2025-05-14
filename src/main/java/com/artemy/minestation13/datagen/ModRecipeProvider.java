@@ -1,5 +1,6 @@
 package com.artemy.minestation13.datagen;
 
+import com.artemy.minestation13.MineStation13;
 import com.artemy.minestation13.block.ModBlocks;
 import com.artemy.minestation13.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -10,6 +11,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -50,6 +52,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .criterion(hasItem(Items.REDSTONE_LAMP), conditionsFromItem(Items.REDSTONE_LAMP))
                 .offerTo(exporter);
+
+
+        offerSmithingTrimRecipe(exporter,ModItems.KAUPEN_SMITHING_TEMPLATE, Identifier.of(MineStation13.MOD_ID,"kaupen"));
 
     }
 }

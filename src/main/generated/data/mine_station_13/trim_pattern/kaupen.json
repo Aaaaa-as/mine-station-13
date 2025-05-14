@@ -1,0 +1,8 @@
+{
+  "asset_id": "mine_station_13:kaupen",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.mine_station_13.kaupen"
+  },
+  "template_item": "mine_station_13:kaupen_armor_trim_smithing_template"
+}

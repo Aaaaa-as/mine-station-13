@@ -15,6 +15,7 @@
   "item.mine_station_13.pink_garnet_leggins": "Pink Garnet Leggins",
   "item.mine_station_13.pink_garnet_boots": "Pink Garnet Boots",
   "item.mine_station_13.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
+  "item.mine_station_13.kaupen_armor_trim_smithing_template": "Kaupen Smithing Template",
 
   "block.mine_station_13.pink_garnet_block": "Block of Pink Garnet",
   "block.mine_station_13.raw_pink_garnet_block": "Block of Raw Pink Garnet",
@@ -37,5 +38,8 @@
 
   "tooltip.mine_station_13.press_shift": "Press §e[Shift]§r for info",
 
-  "itemgroup.mine_station_13": "Mine Station 13"
+  "itemgroup.mine_station_13": "Mine Station 13",
+
+  "trim_material.mine_station_13.pink_garnet": "Pink Garnet Material",
+  "trim_pattern.mine_station_13.kaupen": "Kaupen Armor Pattern"
 }

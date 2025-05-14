@@ -15,6 +15,7 @@
   "item.mine_station_13.pink_garnet_leggins": "Поножи из розового граната",
   "item.mine_station_13.pink_garnet_boots": "Ботинки из розового граната",
   "item.mine_station_13.pink_garnet_horse_armor": "Конская броня из розового граната",
+  "item.mine_station_13.kaupen_armor_trim_smithing_template": "Kaupen Smithing Template",
 
   "block.mine_station_13.pink_garnet_block": "Блок розового граната",
   "block.mine_station_13.raw_pink_garnet_block": "Блок рудного розового граната",
@@ -37,5 +38,8 @@
 
   "tooltip.mine_station_13.press_shift": "Нажмите §e[Shift]§r для информации",
 
-  "itemgroup.mine_station_13": "Mine Station 13"
+  "itemgroup.mine_station_13": "Mine Station 13",
+
+  "trim_material.mine_station_13.pink_garnet": "Pink Garnet Material",
+  "trim_pattern.mine_station_13.kaupen": "Kaupen Armor Pattern"
 }
