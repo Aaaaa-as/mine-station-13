@@ -3,6 +3,7 @@ package com.artemy.minestation13.block;
 import com.artemy.minestation13.MineStation13;
 import com.artemy.minestation13.block.custom.MagicBlock;
 import com.artemy.minestation13.block.custom.PinkGarnetLampBlock;
+import com.artemy.minestation13.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -37,7 +38,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.DEEPSLATE)));
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
-            new MagicBlock(AbstractBlock.Settings.create().strength(1.0f)
+            new MagicBlock(AbstractBlock.Settings.create().strength(1.0f).sounds(ModSounds.MAGIC_BLOCK_SOUNDS)
                     .requiresTool()));
 
     public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
