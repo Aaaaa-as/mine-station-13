@@ -34,5 +34,14 @@
     "sounds": [
       "mine_station_13:magic_block_fall"
     ]
+  },
+  "bar_brawl": {
+    "subtitle": "sounds.mine_station_13.bar_brawl",
+    "sounds": [
+      {
+        "name":"mine_station_13:bar_brawl",
+        "stream":true
+      }
+    ]
   }
 }

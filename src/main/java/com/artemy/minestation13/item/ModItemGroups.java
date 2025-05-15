@@ -59,6 +59,7 @@ public class ModItemGroups {
                                 entries.add(ModItems.KAUPEN_SMITHING_TEMPLATE);
                                 entries.add(ModItems.CAULIFLOWER);
                                 entries.add(ModItems.STARLIGHT_ASHES);
+                                entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
                             })).build());
 
     public static void registerModItemGroups() {

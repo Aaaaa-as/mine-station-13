@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.mine_station_13.bar_brawl_music_disc.desc"
+  },
+  "length_in_seconds": 162,
+  "sound_event": "mine_station_13:bar_brawl"
+}

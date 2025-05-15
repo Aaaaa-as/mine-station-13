@@ -4,6 +4,7 @@ import com.artemy.minestation13.MineStation13;
 import com.artemy.minestation13.item.custom.ChiselItem;
 import com.artemy.minestation13.item.custom.HammerItem;
 import com.artemy.minestation13.item.custom.ModArmorItem;
+import com.artemy.minestation13.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -67,6 +68,9 @@ public class ModItems {
 
     public static final Item KAUPEN_BOW = registerItem("kaupen_bow",
             new BowItem(new Item.Settings().maxDamage(500)));
+
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MineStation13.MOD_ID, name), item);
