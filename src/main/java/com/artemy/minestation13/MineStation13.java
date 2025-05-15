@@ -2,6 +2,7 @@ package com.artemy.minestation13;
 
 import com.artemy.minestation13.block.ModBlocks;
 import com.artemy.minestation13.component.ModDataComponentTypes;
+import com.artemy.minestation13.effect.ModEffects;
 import com.artemy.minestation13.item.ModItemGroups;
 import com.artemy.minestation13.item.ModItems;
 import com.artemy.minestation13.util.HammerUsageEvent;
@@ -32,6 +33,8 @@ public class MineStation13 implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModDataComponentTypes.registerDataComponentTypes();
+
+		ModEffects.registerModEffects();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 

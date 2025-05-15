@@ -44,5 +44,7 @@
   "itemgroup.mine_station_13": "Mine Station 13",
 
   "trim_material.mine_station_13.pink_garnet": "Pink Garnet Material",
-  "trim_pattern.mine_station_13.kaupen": "Kaupen Armor Pattern"
+  "trim_pattern.mine_station_13.kaupen": "Kaupen Armor Pattern",
+
+  "effect.mine_station_13.slimey": "Slimey"
 }
