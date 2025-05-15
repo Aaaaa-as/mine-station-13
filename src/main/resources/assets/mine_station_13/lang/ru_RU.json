@@ -20,6 +20,10 @@
   "item.mine_station_13.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.mine_station_13.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
   "block.mine_station_13.pink_garnet_block": "Блок розового граната",
   "block.mine_station_13.raw_pink_garnet_block": "Блок рудного розового граната",
   "block.mine_station_13.pink_garnet_ore": "Руда розового граната",
