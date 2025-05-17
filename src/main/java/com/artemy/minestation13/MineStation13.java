@@ -3,6 +3,7 @@ package com.artemy.minestation13;
 import com.artemy.minestation13.block.ModBlocks;
 import com.artemy.minestation13.component.ModDataComponentTypes;
 import com.artemy.minestation13.effect.ModEffects;
+import com.artemy.minestation13.enchantment.ModEnchantmentEffects;
 import com.artemy.minestation13.item.ModItemGroups;
 import com.artemy.minestation13.item.ModItems;
 import com.artemy.minestation13.potion.ModPotions;
@@ -20,6 +21,7 @@ import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,6 +30,7 @@ public class MineStation13 implements ModInitializer {
 	public static final String MOD_ID = "mine_station_13";
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
 
 	@Override
 	public void onInitialize() {
@@ -40,6 +43,8 @@ public class MineStation13 implements ModInitializer {
 
 		ModEffects.registerModEffects();
 		ModPotions.registerPotions();
+
+		ModEnchantmentEffects.registerEnchantmentEffects();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 
@@ -59,4 +64,9 @@ public class MineStation13 implements ModInitializer {
 			builder.registerPotionRecipe(Potions.AWKWARD,Items.SLIME_BALL, ModPotions.SLIMEY_POTION);
 		});
 	}
+
+	public static Identifier id(String path) {
+		return Identifier.of(MOD_ID, path);
+	}
+
 }
