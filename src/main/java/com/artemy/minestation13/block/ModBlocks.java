@@ -105,7 +105,7 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, Identifier.of(MineStation13.MOD_ID, name), block);
     }
     private static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.of(MineStation13.MOD_ID, name), new BlockItem(block, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, MineStation13.id(name)))));
+        Registry.register(Registries.ITEM, Identifier.of(MineStation13.MOD_ID, name), new BlockItem(block, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, MineStation13.id(name))).useBlockPrefixedTranslationKey()));
     }
     public static void registerModBlocks() {
         MineStation13.LOGGER.info("Registering Mod Blocks for " + MineStation13.MOD_ID);
