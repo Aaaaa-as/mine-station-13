@@ -2,10 +2,8 @@ package com.artemy.minestation13.mixin;
 
 import com.artemy.minestation13.item.ModItems;
 import com.mojang.authlib.GameProfile;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
@@ -14,7 +12,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 // With help from https://github.com/Globox1997/MedievalWeapons/blob/1.21/src/main/java/net/medievalweapons/mixin/client/AbstractClientPlayerEntityMixin.java
 // Under MIT License!
@@ -24,17 +21,16 @@ public abstract class AbstractClientPlayerEntityMixin extends PlayerEntity {
         super(world, pos, yaw, gameProfile);
     }
 
-    @SuppressWarnings("unused")
-    @Inject(method = "getFovMultiplier", at = @At(value = "TAIL"), locals = LocalCapture.CAPTURE_FAILSOFT, cancellable = true)
-    private void getFovMultiplierMixin(CallbackInfoReturnable<Float> info, float f) {
-        Item item = this.getActiveItem().getItem();
+    @Inject(method = "getFovMultiplier", at = @At("TAIL"), cancellable = true)
+    private void getFovMultiplierMixin(boolean firstPerson, float fovEffectScale, CallbackInfoReturnable<Float> cir) {
         ItemStack itemStack = this.getActiveItem();
         if (this.isUsingItem() && itemStack.isOf(ModItems.KAUPEN_BOW)) {
-            int i = this.getItemUseTime();
-            float g = (float)i / 20.0f;
+            int useTime = this.getItemUseTime();
+            float g = useTime / 20.0f;
             g = g > 1.0f ? 1.0f : g * g;
-            f *= 1.0f - g * 0.15f;
-            info.setReturnValue(MathHelper.lerp(MinecraftClient.getInstance().options.getFovEffectScale().getValue().floatValue(), 1.0f, f));
+            float modifiedFov = 1.0f - g * 0.15f;
+            float finalFov = MathHelper.lerp(fovEffectScale, 1.0f, modifiedFov);
+            cir.setReturnValue(finalFov);
         }
     }
 }

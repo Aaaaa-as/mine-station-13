@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "mine_station_13:item/pink_garnet_leggins",
+    "layer0": "mine_station_13:item/pink_garnet_leggings",
     "layer1": "minecraft:trims/items/leggings_trim_gold"
   }
 }

@@ -18,6 +18,8 @@ public class ModTags {
     }
     public static class Items {
         public static final TagKey<Item> MAGIC_TRANSFORMABLE_ITEMS = createTag("magic_transformable_items");
+        public static final TagKey<Item> PINK_GARNET_REPAIR = createTag("pink_garnet_repair");
+
 
         @SuppressWarnings("SameParameterValue")
         private static TagKey<Item> createTag(String name) {

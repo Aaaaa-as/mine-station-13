@@ -3,7 +3,7 @@ package com.artemy.minestation13.trim;
 import com.artemy.minestation13.MineStation13;
 import com.artemy.minestation13.item.ModItems;
 import net.minecraft.item.Item;
-import net.minecraft.item.trim.ArmorTrimMaterial;
+import net.minecraft.item.equipment.trim.ArmorTrimMaterial;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;

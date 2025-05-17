@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "mine_station_13:pink_garnet_block"
-    }
+    "mine_station_13:pink_garnet_block"
   ],
   "result": {
     "count": 9,

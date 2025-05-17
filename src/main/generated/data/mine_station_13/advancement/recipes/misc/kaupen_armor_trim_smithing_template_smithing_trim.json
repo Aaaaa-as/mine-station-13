@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mine_station_13:kaupen"
+        "recipe": "minecraft:kaupen_armor_trim_smithing_template_smithing_trim"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mine_station_13:kaupen"
+      "minecraft:kaupen_armor_trim_smithing_template_smithing_trim"
     ]
   }
 }

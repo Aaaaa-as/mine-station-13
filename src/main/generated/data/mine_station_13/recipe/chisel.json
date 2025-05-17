@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "/": {
-      "item": "minecraft:stick"
-    },
-    "G": {
-      "item": "mine_station_13:pink_garnet"
-    }
+    "/": "minecraft:stick",
+    "G": "mine_station_13:pink_garnet"
   },
   "pattern": [
     "G",

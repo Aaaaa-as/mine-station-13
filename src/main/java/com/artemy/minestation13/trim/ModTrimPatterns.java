@@ -3,7 +3,7 @@ package com.artemy.minestation13.trim;
 import com.artemy.minestation13.MineStation13;
 import com.artemy.minestation13.item.ModItems;
 import net.minecraft.item.Item;
-import net.minecraft.item.trim.ArmorTrimPattern;
+import net.minecraft.item.equipment.trim.ArmorTrimPattern;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
@@ -20,6 +20,7 @@ public class ModTrimPatterns {
         register(context, ModItems.KAUPEN_SMITHING_TEMPLATE, KAUPEN);
     }
 
+    @SuppressWarnings("SameParameterValue")
     private static void register(Registerable<ArmorTrimPattern> context, Item item, RegistryKey<ArmorTrimPattern> key) {
         ArmorTrimPattern trimPattern = new ArmorTrimPattern(key.getValue(), Registries.ITEM.getEntry(item),
                 Text.translatable(Util.createTranslationKey("trim_pattern", key.getValue())), false);

@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "mine_station_13:pink_garnet"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "mine_station_13:pink_garnet"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mine_station_13:pink_garnet"
+      }
+    ]
+  }
+}

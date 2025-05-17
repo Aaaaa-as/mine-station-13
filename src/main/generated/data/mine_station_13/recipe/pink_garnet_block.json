@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "mine_station_13:pink_garnet"
-    }
+    "#": "mine_station_13:pink_garnet"
   },
   "pattern": [
     "###",

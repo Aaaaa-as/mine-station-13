@@ -1,12 +1,14 @@
 package com.artemy.minestation13.datagen;
 
+import com.artemy.minestation13.MineStation13;
 import com.artemy.minestation13.block.ModBlocks;
 import com.artemy.minestation13.block.custom.PinkGarnetLampBlock;
 import com.artemy.minestation13.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
-import net.minecraft.item.ArmorItem;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.equipment.EquipmentModel;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -54,10 +56,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PINK_GARNET_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_HAMMER, Models.HANDHELD);
-        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_HELMET);
-        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE);
-        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_LEGGINS);
-        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_BOOTS);
+        itemModelGenerator.registerArmor(ModItems.PINK_GARNET_HELMET, MineStation13.id("pink_garnet"),
+                EquipmentModel.builder().addHumanoidLayers(MineStation13.id("pink_garnet")).build(), EquipmentSlot.HEAD);
+        itemModelGenerator.registerArmor( ModItems.PINK_GARNET_CHESTPLATE, MineStation13.id("pink_garnet"),
+                EquipmentModel.builder().addHumanoidLayers(MineStation13.id("pink_garnet")).build(), EquipmentSlot.CHEST);
+        itemModelGenerator.registerArmor( ModItems.PINK_GARNET_LEGGINGS, MineStation13.id("pink_garnet"),
+                EquipmentModel.builder().addHumanoidLayers(MineStation13.id("pink_garnet")).build(), EquipmentSlot.LEGS);
+        itemModelGenerator.registerArmor( ModItems.PINK_GARNET_BOOTS, MineStation13.id("pink_garnet"),
+                EquipmentModel.builder().addHumanoidLayers(MineStation13.id("pink_garnet")).build(), EquipmentSlot.FEET);
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.KAUPEN_SMITHING_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);

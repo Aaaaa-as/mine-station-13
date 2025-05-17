@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:smithing_trim",
+  "addition": "#minecraft:trim_materials",
+  "base": "#minecraft:trimmable_armor",
+  "template": "mine_station_13:kaupen_armor_trim_smithing_template"
+}

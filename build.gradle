@@ -39,8 +39,8 @@ dependencies {
 
 
 	// Other mods
-	modRuntimeOnly "curse.maven:modmenu-308702:5810603"
-	modRuntimeOnly "curse.maven:emi-580555:6420930"
+	//modRuntimeOnly "curse.maven:modmenu-308702:5810603"
+	//modRuntimeOnly "curse.maven:emi-580555:6420930"
 
 }
 
