@@ -50,5 +50,12 @@
   "trim_material.mine_station_13.pink_garnet": "Pink Garnet Material",
   "trim_pattern.mine_station_13.kaupen": "Kaupen Armor Pattern",
 
-  "effect.mine_station_13.slimey": "Slimey"
+  "effect.mine_station_13.slimey": "Slimey",
+
+  "painting.mine_station_13.world.title": "World",
+  "painting.mine_station_13.world.author": "NanoAttack",
+  "painting.mine_station_13.shrimp.title": "Shrimp",
+  "painting.mine_station_13.shrimp.author": "NanoAttack",
+  "painting.mine_station_13.saw_them.title": "Saw Them",
+  "painting.mine_station_13.saw_them.author": "NanoAttack"
 }
