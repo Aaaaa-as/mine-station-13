@@ -86,7 +86,10 @@ public class ModBlocks {
     public static final Block CAULIFLOWER_CROP = registerBlock("cauliflower_crop",
             new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)
-                    .mapColor(MapColor.GREEN)));
+                    .mapColor(MapColor.GREEN)),false);
+
+    public static final Block HONEY_BERRY_BUSH = registerBlock("honey_berry_bush",
+            new HoneyBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
 
     public static Block registerBlock(String name, Block block) {

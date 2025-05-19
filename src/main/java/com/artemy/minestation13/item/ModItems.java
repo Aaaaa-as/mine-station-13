@@ -76,6 +76,9 @@ public class ModItems {
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
             new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
 
+    public static final Item HONEY_BERRIES = registerItem("honey_berries",
+            new AliasedBlockItem(ModBlocks.HONEY_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.HONEY_BERRIES)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MineStation13.MOD_ID, name), item);
     }
@@ -90,6 +93,7 @@ public class ModItems {
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(CAULIFLOWER);
+            entries.add(HONEY_BERRIES);
         });
     }
 }

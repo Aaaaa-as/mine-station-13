@@ -2,6 +2,7 @@ package com.artemy.minestation13.datagen;
 
 import com.artemy.minestation13.block.ModBlocks;
 import com.artemy.minestation13.block.custom.CauliflowerCropBlock;
+import com.artemy.minestation13.block.custom.HoneyBerryBushBlock;
 import com.artemy.minestation13.block.custom.PinkGarnetLampBlock;
 import com.artemy.minestation13.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -24,6 +25,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE,0,1,2,3,4,5,6);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.HONEY_BERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                HoneyBerryBushBlock.AGE,0,1,2,3);
 
         pinkGarnetPool.stairs(ModBlocks.PINK_GARNET_STAIRS);
         pinkGarnetPool.slab(ModBlocks.PINK_GARNET_SLAB);

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "mine_station_13:block/honey_berry_bush_stage1"
+  }
+}
