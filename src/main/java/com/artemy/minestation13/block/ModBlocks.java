@@ -1,11 +1,11 @@
 package com.artemy.minestation13.block;
 
 import com.artemy.minestation13.MineStation13;
-import com.artemy.minestation13.block.custom.MagicBlock;
-import com.artemy.minestation13.block.custom.PinkGarnetLampBlock;
+import com.artemy.minestation13.block.custom.*;
 import com.artemy.minestation13.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -83,9 +83,17 @@ public class ModBlocks {
                     .luminance((state) -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)
                     .requiresTool()));
 
+    public static final Block CAULIFLOWER_CROP = registerBlock("cauliflower_crop",
+            new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)
+                    .mapColor(MapColor.GREEN)));
+
 
     public static Block registerBlock(String name, Block block) {
-        registerBlockItem(name, block);
+        return registerBlock(name, block, true);
+    }
+    public static Block registerBlock(String name, Block block,boolean registerItem) {
+        if(registerItem)registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(MineStation13.MOD_ID, name), block);
     }
     private static void registerBlockItem(String name, Block block) {
@@ -98,5 +106,6 @@ public class ModBlocks {
             entries.add(PINK_GARNET_BLOCK);
             entries.add(RAW_PINK_GARNET_BLOCK);
         });
+
     }
 }

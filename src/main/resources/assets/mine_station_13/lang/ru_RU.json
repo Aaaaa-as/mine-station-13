@@ -19,6 +19,7 @@
   "item.mine_station_13.kaupen_bow": "Kaupen Bow",
   "item.mine_station_13.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.mine_station_13.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+  "item.mine_station_13.cauliflower_seeds": "Семена цветной капусты",
 
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
@@ -39,6 +40,7 @@
   "block.mine_station_13.pink_garnet_door": "Дверь из розового граната",
   "block.mine_station_13.pink_garnet_trapdoor": "Люк из розового граната",
   "block.mine_station_13.pink_garnet_lamp": "Лампа из розового граната",
+  "block.mine_station_13.cauliflower_crop": "Цветная Капуста",
 
   "tooltip.mine_station_13.magic_block.tooltip": "Этот блок очень, очень §9МАГИЧЕСКИй§r",
   "tooltip.mine_station_13.chisel.info": "Превращает камни в кирпичи",

@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-17T15:41:47.8572114	Mine Station 13/Block Loot Tables
+// 1.21.1	2025-05-19T13:11:53.667701	Mine Station 13/Block Loot Tables
 ae4bc5d53c2919590cf8164af3ed40bec676439c data\mine_station_13\loot_table\blocks\pink_garnet_button.json
 af06657fadccb660d98ad9913cb71c5c3a5793d4 data\mine_station_13\loot_table\blocks\pink_garnet_deepslate_ore.json
 b759aed9f25124f5c9d7db15be1a2d8e6182b5d8 data\mine_station_13\loot_table\blocks\pink_garnet_trapdoor.json
@@ -11,6 +11,7 @@ eb03baab50937fba1272bb6dfadd9bfaa9cd84a4 data\mine_station_13\loot_table\blocks\
 0013d3dddf065a5b64b7eeeb674f2fd578154fa5 data\mine_station_13\loot_table\blocks\magic_block.json
 146a717e95fdc56a7586a8419e65a84b26049e45 data\mine_station_13\loot_table\blocks\raw_pink_garnet_block.json
 a03eda72cfa57a0e7e25dafbed4e5266ec46def7 data\mine_station_13\loot_table\blocks\pink_garnet_fence_gate.json
+2be6e6f306e67e58b1d834bb39942d4bc408768b data\mine_station_13\loot_table\blocks\cauliflower_crop.json
 25bca7659a64088af448caae94228253a02798d7 data\mine_station_13\loot_table\blocks\pink_garnet_stairs.json
 dc992a5262937ac69092dba69d805819a58744e0 data\mine_station_13\loot_table\blocks\pink_garnet_lamp.json
 94571d772b3944cc57d662556f13f9a2cc5d0aba data\mine_station_13\loot_table\blocks\pink_garnet_slab.json
