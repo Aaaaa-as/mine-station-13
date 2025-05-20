@@ -8,14 +8,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
     @SuppressWarnings("unused")
     public static final ItemGroup MINE_STATION_13_GROUP =
             Registry.register(Registries.ITEM_GROUP,
-                    Identifier.of(MineStation13.MOD_ID, "mine_station_13"),
+                    MineStation13.id("mine_station_13"),
                     FabricItemGroup.builder()
                             .icon(() -> new ItemStack(ModItems.PINK_GARNET))
                             .displayName(Text.translatable("itemgroup.mine_station_13"))
@@ -42,6 +41,8 @@ public class ModItemGroups {
 
                                 entries.add(ModBlocks.MAGIC_BLOCK);
                                 entries.add(ModBlocks.PINK_GARNET_ORE);
+                                entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+                                entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
                                 entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
                                 entries.add(ModItems.PINK_GARNET_SWORD);
                                 entries.add(ModItems.KAUPEN_BOW);

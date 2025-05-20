@@ -25,10 +25,10 @@ public class ModSounds {
 
     public static final SoundEvent BAR_BRAWL = registerSoundEvent("bar_brawl");
     public static final RegistryKey<JukeboxSong> BAR_BRAWL_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG,
-            Identifier.of(MineStation13.MOD_ID, "bar_brawl"));
+            MineStation13.id("bar_brawl"));
 
     private static SoundEvent registerSoundEvent(String name) {
-        Identifier id = Identifier.of(MineStation13.MOD_ID, name);
+        Identifier id = MineStation13.id(name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
     }
 }

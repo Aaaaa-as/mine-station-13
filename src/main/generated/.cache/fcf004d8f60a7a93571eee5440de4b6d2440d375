@@ -1,4 +1,10 @@
-// 1.21.1	2025-05-19T13:53:09.4055644	Mine Station 13/
+// 1.21.1	2025-05-20T12:46:46.4413487	Mine Station 13/
+5f98015a2ac7828e2143bfca1a6714ef5c6b6372 data\mine_station_13\worldgen\configured_feature\end_pink_garnet_ore.json
 0aee8928e606833cca41451490ede18af02cf738 data\mine_station_13\enchantment\lightning_striker.json
+4fea7a70ee8485dde095b0507c489be92d3920a4 data\mine_station_13\worldgen\configured_feature\pink_garnet_ore.json
 5027a538ae7d54e21594a1db55fc0c34e73278a2 data\mine_station_13\trim_pattern\kaupen.json
+ebb38835e88d15f6a0379d5e6d344de5b4ceb55e data\mine_station_13\worldgen\placed_feature\pink_garnet_ore_placed.json
 ee6cd599446c440a6a22aaaa0b625ea05ca10ae1 data\mine_station_13\trim_material\pink_garnet.json
+c0f1ea85b229428f384865a4bf173f3f9b70b9ee data\mine_station_13\worldgen\placed_feature\end_pink_garnet_ore_placed.json
+d43f2f3bed4636e98beaa94f99268f1abb047cda data\mine_station_13\worldgen\configured_feature\nether_pink_garnet_ore.json
+11d7e5dd2bfd877734554cb48b7006fb306eaccc data\mine_station_13\worldgen\placed_feature\nether_pink_garnet_ore_placed.json

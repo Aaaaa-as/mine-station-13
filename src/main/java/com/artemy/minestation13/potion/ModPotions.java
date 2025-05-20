@@ -7,7 +7,6 @@ import net.minecraft.potion.Potion;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.util.Identifier;
 
 public class ModPotions{
     public static final RegistryEntry<Potion> SLIMEY_POTION = registerPotion("slimey_potion",
@@ -15,7 +14,7 @@ public class ModPotions{
 
     @SuppressWarnings("SameParameterValue")
     private static RegistryEntry<Potion> registerPotion(String name, Potion potion) {
-        return Registry.registerReference(Registries.POTION, Identifier.of(MineStation13.MOD_ID, name), potion);
+        return Registry.registerReference(Registries.POTION, MineStation13.id(name), potion);
     }
 
     public static void registerPotions() {

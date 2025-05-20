@@ -12,7 +12,6 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
@@ -36,6 +35,16 @@ public class ModBlocks {
                     AbstractBlock.Settings.create().strength(3.0f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block PINK_GARNET_NETHER_ORE = registerBlock("pink_garnet_nether_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(3.0f)
+                            .requiresTool()));
+
+    public static final Block PINK_GARNET_END_ORE = registerBlock("pink_garnet_end_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(7)
+                            .requiresTool()));
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
             new MagicBlock(AbstractBlock.Settings.create().strength(1.0f).sounds(ModSounds.MAGIC_BLOCK_SOUNDS)
@@ -97,10 +106,10 @@ public class ModBlocks {
     }
     public static Block registerBlock(String name, Block block,boolean registerItem) {
         if(registerItem)registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(MineStation13.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, MineStation13.id(name), block);
     }
     private static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.of(MineStation13.MOD_ID, name), new BlockItem(block, new Item.Settings()));
+        Registry.register(Registries.ITEM, MineStation13.id(name), new BlockItem(block, new Item.Settings()));
     }
     public static void registerModBlocks() {
         MineStation13.LOGGER.info("Registering Mod Blocks for " + MineStation13.MOD_ID);

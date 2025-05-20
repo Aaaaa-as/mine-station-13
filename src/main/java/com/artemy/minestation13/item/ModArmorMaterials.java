@@ -28,6 +28,6 @@ public class ModArmorMaterials {
                     List.of(new ArmorMaterial.Layer(Identifier.of(MineStation13.MOD_ID,"pink_garnet"))),2,0));
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
-        return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(MineStation13.MOD_ID, name), material.get());
+        return Registry.registerReference(Registries.ARMOR_MATERIAL, MineStation13.id(name), material.get());
     }
 }

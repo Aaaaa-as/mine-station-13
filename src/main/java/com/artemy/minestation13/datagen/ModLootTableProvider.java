@@ -49,6 +49,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.PINK_GARNET_ORE,multipleOreDrops(ModBlocks.PINK_GARNET_ORE, ModItems.RAW_PINK_GARNET,1,2));
         addDrop(ModBlocks.PINK_GARNET_DEEPSLATE_ORE,multipleOreDrops(ModBlocks.PINK_GARNET_DEEPSLATE_ORE, ModItems.RAW_PINK_GARNET,2,4));
+        addDrop(ModBlocks.PINK_GARNET_END_ORE,multipleOreDrops(ModBlocks.PINK_GARNET_END_ORE, ModItems.RAW_PINK_GARNET,3,6));
+        addDrop(ModBlocks.PINK_GARNET_NETHER_ORE,multipleOreDrops(ModBlocks.PINK_GARNET_NETHER_ORE, ModItems.RAW_PINK_GARNET,1,3));
 
         BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.CAULIFLOWER_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(CauliflowerCropBlock.AGE, CauliflowerCropBlock.MAX_AGE));

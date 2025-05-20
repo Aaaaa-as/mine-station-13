@@ -80,7 +80,7 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.HONEY_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.HONEY_BERRIES)));
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(MineStation13.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, MineStation13.id(name), item);
     }
 
 

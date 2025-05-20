@@ -20,7 +20,7 @@ public class ModEffects {
 
     @SuppressWarnings("SameParameterValue")
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect effect) {
-        return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(MineStation13.MOD_ID, name), effect);
+        return Registry.registerReference(Registries.STATUS_EFFECT, MineStation13.id(name), effect);
     }
 
     public static void registerModEffects() {
