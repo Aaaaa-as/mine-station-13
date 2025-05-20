@@ -8,6 +8,7 @@ import com.artemy.minestation13.item.ModItemGroups;
 import com.artemy.minestation13.item.ModItems;
 import com.artemy.minestation13.potion.ModPotions;
 import com.artemy.minestation13.util.HammerUsageEvent;
+import com.artemy.minestation13.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
@@ -46,6 +47,7 @@ public class MineStation13 implements ModInitializer {
 		ModPotions.registerPotions();
 
 		ModEnchantmentEffects.registerEnchantmentEffects();
+		ModWorldGeneration.generateModWorldGen();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 
