@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mine_station_13:block/stripped_driftwood_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mine_station_13:block/stripped_driftwood_wood"
+    },
+    "axis=z": {
+      "model": "mine_station_13:block/stripped_driftwood_wood",
+      "x": 90
+    }
+  }
+}

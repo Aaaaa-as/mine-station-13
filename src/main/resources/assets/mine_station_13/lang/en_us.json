@@ -43,6 +43,13 @@
   "block.mine_station_13.pink_garnet_lamp": "Pink Garnet Lamp",
   "block.mine_station_13.cauliflower_crop": "Cauliflower Crop",
   "block.mine_station_13.honey_berries_bush": "Honey Berries Bush",
+  "block.mine_station_13.driftwood_log": "Driftwood Log",
+  "block.mine_station_13.driftwood_wood": "Driftwood Wood",
+  "block.mine_station_13.stripped_driftwood_log": "Stripped Driftwood Log",
+  "block.mine_station_13.stripped_driftwood_wood": "Stripped Driftwood Wood",
+  "block.mine_station_13.driftwood_planks": "Driftwood Planks",
+  "block.mine_station_13.driftwood_leaves": "Driftwood Leaves",
+  "block.mine_station_13.driftwood_sapling": "Driftwood Sapling",
 
   "tooltip.mine_station_13.magic_block.tooltip": "This block is very, very §9MAGICAL§r",
   "tooltip.mine_station_13.chisel.info": "Chisels stone into bricks",
