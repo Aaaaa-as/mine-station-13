@@ -2,6 +2,7 @@ package com.artemy.minestation13.item;
 
 import com.artemy.minestation13.MineStation13;
 import com.artemy.minestation13.block.ModBlocks;
+import com.artemy.minestation13.entity.ModEntities;
 import com.artemy.minestation13.item.custom.ChiselItem;
 import com.artemy.minestation13.item.custom.HammerItem;
 import com.artemy.minestation13.item.custom.ModArmorItem;
@@ -78,6 +79,9 @@ public class ModItems {
 
     public static final Item HONEY_BERRIES = registerItem("honey_berries",
             new AliasedBlockItem(ModBlocks.HONEY_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.HONEY_BERRIES)));
+
+    public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
+            new SpawnEggItem(ModEntities.MANTIS,0x9dc703, 0xbfaf5f, new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, MineStation13.id(name), item);

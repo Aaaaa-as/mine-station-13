@@ -4,6 +4,8 @@ import com.artemy.minestation13.block.ModBlocks;
 import com.artemy.minestation13.component.ModDataComponentTypes;
 import com.artemy.minestation13.effect.ModEffects;
 import com.artemy.minestation13.enchantment.ModEnchantmentEffects;
+import com.artemy.minestation13.entity.ModEntities;
+import com.artemy.minestation13.entity.custom.MantisEntity;
 import com.artemy.minestation13.item.ModItemGroups;
 import com.artemy.minestation13.item.ModItems;
 import com.artemy.minestation13.potion.ModPotions;
@@ -13,6 +15,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.*;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -47,6 +50,8 @@ public class MineStation13 implements ModInitializer {
 		ModEnchantmentEffects.registerEnchantmentEffects();
 		ModWorldGeneration.generateModWorldGen();
 
+		ModEntities.registerModEntities();
+
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
@@ -79,6 +84,8 @@ public class MineStation13 implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_PLANKS, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LEAVES, 30, 60);
+
+		FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 	}
 
 	public static Identifier id(String path) {

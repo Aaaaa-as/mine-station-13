@@ -72,6 +72,8 @@ public class ModItemGroups {
                                 entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
                                 entries.add(ModItems.CAULIFLOWER_SEEDS);
                                 entries.add(ModItems.HONEY_BERRIES);
+
+                                entries.add(ModItems.MANTIS_SPAWN_EGG);
                             })).build());
 
     public static void registerModItemGroups() {

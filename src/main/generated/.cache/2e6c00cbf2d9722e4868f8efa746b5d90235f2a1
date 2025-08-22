@@ -1,12 +1,12 @@
-// 1.21.1	2025-05-21T10:25:51.9131258	Mine Station 13/Tags for minecraft:item
-fb1b69cd3f70c8f6c6e75844a56b016e02242c43 data\minecraft\tags\item\pickaxes.json
-2fd9e7ec2fb4564a525991f54efbf37be1ef41a6 data\minecraft\tags\item\planks.json
-239864f7d34a0c3f92f16fc234558a306822ff5a data\minecraft\tags\item\logs_that_burn.json
-3aa5aa8158d89ed9927db5881cfe28206b4dda0f data\minecraft\tags\item\swords.json
-b7191aaa618cfb31545a7f487b24d38c76c465df data\mine_station_13\tags\item\magic_transformable_items.json
-48c9d15f94c3f225aa1665c09fbda19c19600d47 data\minecraft\tags\item\axes.json
-8df8c0c9f4be3565450d10ca9cdb161ae67dc735 data\minecraft\tags\item\trim_materials.json
-afc3559061950539b00ba8d283df6206432b2c82 data\minecraft\tags\item\hoes.json
-3430c8db17700f36ad9a581230f519bba7c980f3 data\minecraft\tags\item\trimmable_armor.json
-5e10f2f9c9161af889f0a3ef838245c4fe730a83 data\minecraft\tags\item\shovels.json
+// 1.21.1	2025-08-21T15:43:56.789469	Mine Station 13/Tags for minecraft:item
 14c70164403719caac9a1741648a725a957e913d data\minecraft\tags\item\trim_templates.json
+48c9d15f94c3f225aa1665c09fbda19c19600d47 data\minecraft\tags\item\axes.json
+3430c8db17700f36ad9a581230f519bba7c980f3 data\minecraft\tags\item\trimmable_armor.json
+239864f7d34a0c3f92f16fc234558a306822ff5a data\minecraft\tags\item\logs_that_burn.json
+8df8c0c9f4be3565450d10ca9cdb161ae67dc735 data\minecraft\tags\item\trim_materials.json
+2fd9e7ec2fb4564a525991f54efbf37be1ef41a6 data\minecraft\tags\item\planks.json
+fb1b69cd3f70c8f6c6e75844a56b016e02242c43 data\minecraft\tags\item\pickaxes.json
+b7191aaa618cfb31545a7f487b24d38c76c465df data\mine_station_13\tags\item\magic_transformable_items.json
+5e10f2f9c9161af889f0a3ef838245c4fe730a83 data\minecraft\tags\item\shovels.json
+3aa5aa8158d89ed9927db5881cfe28206b4dda0f data\minecraft\tags\item\swords.json
+afc3559061950539b00ba8d283df6206432b2c82 data\minecraft\tags\item\hoes.json

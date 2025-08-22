@@ -70,5 +70,7 @@
   "painting.mine_station_13.saw_them.title": "Saw Them",
   "painting.mine_station_13.saw_them.author": "NanoAttack",
 
-  "enchantment.mine_station_13.lightning_striker": "Lightning Striker"
+  "enchantment.mine_station_13.lightning_striker": "Lightning Striker",
+
+  "entity.mine_station_13.mantis": "Mantis",
 }

@@ -1,3 +1,6 @@
 {
-  "parent": "mine_station_13:block/driftwood_sapling"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mine_station_13:item/driftwood_sapling"
+  }
 }

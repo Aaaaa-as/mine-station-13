@@ -1,9 +1,14 @@
 package com.artemy.minestation13;
 
 import com.artemy.minestation13.block.ModBlocks;
+import com.artemy.minestation13.entity.ModEntities;
+import com.artemy.minestation13.entity.client.MantisModel;
+import com.artemy.minestation13.entity.client.MantisRenderer;
 import com.artemy.minestation13.util.ModModelPredicates;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
 
 public class MineStation13Client implements ClientModInitializer {
@@ -17,5 +22,8 @@ public class MineStation13Client implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRIFTWOOD_SAPLING, RenderLayer.getCutout());
 
         ModModelPredicates.registerModelPredicates();
+
+        EntityModelLayerRegistry.registerModelLayer(MantisModel.MANTIS,MantisModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.MANTIS, MantisRenderer::new);
     }
 }
