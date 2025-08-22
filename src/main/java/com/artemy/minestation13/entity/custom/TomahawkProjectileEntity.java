@@ -31,10 +31,8 @@ public class TomahawkProjectileEntity extends PersistentProjectileEntity {
     }
 
     public float getRenderingRotation() {
-        rotation += 0.5f;
-        if(rotation >= 360) {
-            rotation = 0;
-        }
+        if(!inGround) rotation += 1f;
+        if(rotation >= 360) rotation = 0;
         return rotation;
     }
 
