@@ -3,9 +3,7 @@ package com.artemy.minestation13.item;
 import com.artemy.minestation13.MineStation13;
 import com.artemy.minestation13.block.ModBlocks;
 import com.artemy.minestation13.entity.ModEntities;
-import com.artemy.minestation13.item.custom.ChiselItem;
-import com.artemy.minestation13.item.custom.HammerItem;
-import com.artemy.minestation13.item.custom.ModArmorItem;
+import com.artemy.minestation13.item.custom.*;
 import com.artemy.minestation13.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -82,6 +80,11 @@ public class ModItems {
 
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
             new SpawnEggItem(ModEntities.MANTIS,0x9dc703, 0xbfaf5f, new Item.Settings()));
+
+    public static final Item TOMAHAWK = registerItem("tomahawk",
+            new TomahawkItem(new Item.Settings().maxCount(16)));
+
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, MineStation13.id(name), item);

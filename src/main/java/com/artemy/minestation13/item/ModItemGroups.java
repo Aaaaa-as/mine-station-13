@@ -74,6 +74,7 @@ public class ModItemGroups {
                                 entries.add(ModItems.HONEY_BERRIES);
 
                                 entries.add(ModItems.MANTIS_SPAWN_EGG);
+                                entries.add(ModItems.TOMAHAWK);
                             })).build());
 
     public static void registerModItemGroups() {
