@@ -50,6 +50,7 @@
   "block.mine_station_13.driftwood_planks": "Driftwood Planks",
   "block.mine_station_13.driftwood_leaves": "Driftwood Leaves",
   "block.mine_station_13.driftwood_sapling": "Driftwood Sapling",
+  "block.mine_station_13.chair": "Chair",
 
   "tooltip.mine_station_13.magic_block.tooltip": "This block is very, very §9MAGICAL§r",
   "tooltip.mine_station_13.chisel.info": "Chisels stone into bricks",

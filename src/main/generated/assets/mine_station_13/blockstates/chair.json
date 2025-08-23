@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "mine_station_13:block/chair",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "mine_station_13:block/chair"
+    },
+    "facing=south": {
+      "model": "mine_station_13:block/chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mine_station_13:block/chair",
+      "y": 270
+    }
+  }
+}

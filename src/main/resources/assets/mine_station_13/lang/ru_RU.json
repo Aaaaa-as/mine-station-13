@@ -50,6 +50,7 @@
   "block.mine_station_13.driftwood_planks": "Доски из Дрейфвуда",
   "block.mine_station_13.driftwood_leaves": "Листья Дрейфвуда",
   "block.mine_station_13.driftwood_sapling": "Саженец Дрейфвуда",
+  "block.mine_station_13.chair": "Стул",
 
   "tooltip.mine_station_13.magic_block.tooltip": "Этот блок очень, очень §9МАГИЧЕСКИй§r",
   "tooltip.mine_station_13.chisel.info": "Превращает камни в кирпичи",

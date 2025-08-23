@@ -118,6 +118,9 @@ public class ModBlocks {
     public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",
             new SaplingBlock(ModSaplingGenerators.DRIFTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
 
+    public static final Block CHAIR = registerBlock("chair",
+            new ChairBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
+
 
     public static Block registerBlock(String name, Block block) {
         return registerBlock(name, block, true);
