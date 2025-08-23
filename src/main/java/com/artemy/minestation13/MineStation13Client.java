@@ -2,10 +2,7 @@ package com.artemy.minestation13;
 
 import com.artemy.minestation13.block.ModBlocks;
 import com.artemy.minestation13.entity.ModEntities;
-import com.artemy.minestation13.entity.client.MantisModel;
-import com.artemy.minestation13.entity.client.MantisRenderer;
-import com.artemy.minestation13.entity.client.TomahawkProjectileModel;
-import com.artemy.minestation13.entity.client.TomahawkProjectileRenderer;
+import com.artemy.minestation13.entity.client.*;
 import com.artemy.minestation13.util.ModModelPredicates;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -30,5 +27,7 @@ public class MineStation13Client implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(TomahawkProjectileModel.TOMAHAWK,TomahawkProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
+
+        EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
     }
 }

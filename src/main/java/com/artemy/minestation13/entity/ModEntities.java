@@ -1,6 +1,7 @@
 package com.artemy.minestation13.entity;
 
 import com.artemy.minestation13.MineStation13;
+import com.artemy.minestation13.entity.custom.ChairEntity;
 import com.artemy.minestation13.entity.custom.MantisEntity;
 import com.artemy.minestation13.entity.custom.TomahawkProjectileEntity;
 import net.minecraft.entity.EntityType;
@@ -19,6 +20,11 @@ public class ModEntities {
             MineStation13.id("tomahawk"),
             EntityType.Builder.<TomahawkProjectileEntity>create(TomahawkProjectileEntity::new, SpawnGroup.MISC)
                     .dimensions(.5f, 1.15f).build());
+
+    public static final EntityType<ChairEntity> CHAIR = Registry.register(Registries.ENTITY_TYPE,
+            MineStation13.id("chair"),
+            EntityType.Builder.create(ChairEntity::new, SpawnGroup.MISC)
+                    .dimensions(.5f, .5f).build());
 
     public static void registerModEntities() {
         MineStation13.LOGGER.info("Registering Mod Entities for " + MineStation13.MOD_ID);
