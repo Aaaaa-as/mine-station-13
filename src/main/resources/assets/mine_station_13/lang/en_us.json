@@ -74,5 +74,7 @@
 
   "enchantment.mine_station_13.lightning_striker": "Lightning Striker",
 
-  "entity.mine_station_13.mantis": "Mantis"
+  "entity.mine_station_13.mantis": "Mantis",
+
+  "entity.minecraft.villager.mine_station_13.kaupenger": "Kaupenger"
 }
