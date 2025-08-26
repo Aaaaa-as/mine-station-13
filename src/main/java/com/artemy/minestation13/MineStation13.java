@@ -1,6 +1,7 @@
 package com.artemy.minestation13;
 
 import com.artemy.minestation13.block.ModBlocks;
+import com.artemy.minestation13.block.entity.ModBlockEntities;
 import com.artemy.minestation13.component.ModDataComponentTypes;
 import com.artemy.minestation13.effect.ModEffects;
 import com.artemy.minestation13.enchantment.ModEnchantmentEffects;
@@ -72,6 +73,8 @@ public class MineStation13 implements ModInitializer {
 		ModParticles.registerParticles();
 
 		ModLootTableModifiers.modifyLootTables();
+
+		ModBlockEntities.registerBlockEntities();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 

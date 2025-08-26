@@ -121,6 +121,9 @@ public class ModBlocks {
     public static final Block CHAIR = registerBlock("chair",
             new ChairBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
 
+    public static final Block PEDESTAL = registerBlock("pedestal",
+            new PedestalBlock(AbstractBlock.Settings.copy(Blocks.FURNACE).luminance(state -> 0).nonOpaque()));
+
 
     public static Block registerBlock(String name, Block block) {
         return registerBlock(name, block, true);

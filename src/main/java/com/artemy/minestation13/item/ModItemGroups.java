@@ -52,6 +52,7 @@ public class ModItemGroups {
                                 entries.add(ModBlocks.DRIFTWOOD_PLANKS);
                                 entries.add(ModBlocks.DRIFTWOOD_SAPLING);
                                 entries.add(ModBlocks.CHAIR);
+                                entries.add(ModBlocks.PEDESTAL);
 
 
                                 entries.add(ModItems.PINK_GARNET_SWORD);
