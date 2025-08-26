@@ -11,6 +11,7 @@ import com.artemy.minestation13.item.ModItems;
 import com.artemy.minestation13.particle.ModParticles;
 import com.artemy.minestation13.potion.ModPotions;
 import com.artemy.minestation13.util.HammerUsageEvent;
+import com.artemy.minestation13.util.ModLootTableModifiers;
 import com.artemy.minestation13.util.ModTags;
 import com.artemy.minestation13.villager.ModVillagers;
 import com.artemy.minestation13.world.gen.ModWorldGeneration;
@@ -70,12 +71,15 @@ public class MineStation13 implements ModInitializer {
 
 		ModParticles.registerParticles();
 
+		ModLootTableModifiers.modifyLootTables();
+
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
 			if(entity instanceof SheepEntity sheep && !world.isClient()){
 				if(player.getMainHandStack().getItem() == Items.END_ROD){
+
 					player.sendMessage(Text.literal("<Sheep> please don't"));
 					player.getMainHandStack().decrement(1);
 					sheep.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 600, 3, false, false));
