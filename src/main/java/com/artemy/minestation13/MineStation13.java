@@ -8,6 +8,7 @@ import com.artemy.minestation13.entity.ModEntities;
 import com.artemy.minestation13.entity.custom.MantisEntity;
 import com.artemy.minestation13.item.ModItemGroups;
 import com.artemy.minestation13.item.ModItems;
+import com.artemy.minestation13.particle.ModParticles;
 import com.artemy.minestation13.potion.ModPotions;
 import com.artemy.minestation13.util.HammerUsageEvent;
 import com.artemy.minestation13.util.ModTags;
@@ -66,6 +67,8 @@ public class MineStation13 implements ModInitializer {
 
 		ModEntities.registerModEntities();
 		ModVillagers.registerVillagers();
+
+		ModParticles.registerParticles();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 

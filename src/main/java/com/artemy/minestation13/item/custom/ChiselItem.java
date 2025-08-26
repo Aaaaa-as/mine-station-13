@@ -2,6 +2,7 @@ package com.artemy.minestation13.item.custom;
 
 import com.artemy.minestation13.block.ModBlocks;
 import com.artemy.minestation13.component.ModDataComponentTypes;
+import com.artemy.minestation13.particle.ModParticles;
 import com.artemy.minestation13.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -11,6 +12,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.particle.BlockStateParticleEffect;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
@@ -45,6 +48,12 @@ public class ChiselItem extends Item {
                         item -> Objects.requireNonNull(context.getPlayer()).sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
                 world.playSound(null, context.getBlockPos(), ModSounds.CHISEL_USE, SoundCategory.BLOCKS);
                 context.getStack().set(ModDataComponentTypes.POSITION, context.getBlockPos());
+                ((ServerWorld) world).spawnParticles(new BlockStateParticleEffect(ParticleTypes.BLOCK,clickedBlock.getDefaultState()),
+                        context.getBlockPos().getX()+.5f,context.getBlockPos().getY()+.5f,context.getBlockPos().getZ()+.5f,
+                        20,0,0,0,2.5f);
+                ((ServerWorld) world).spawnParticles(ModParticles.PINK_GARNET_PARTICLE,
+                        context.getBlockPos().getX()+.5f,context.getBlockPos().getY()+.5f,context.getBlockPos().getZ()+.5f,
+                        5,0,0,0,3);
             }
         }
 
