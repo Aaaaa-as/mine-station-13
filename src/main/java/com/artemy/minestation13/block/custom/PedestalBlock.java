@@ -69,7 +69,7 @@ public class PedestalBlock extends BlockWithEntity implements BlockEntityProvide
 
                 pedestalBlockEntity.markDirty();
                 world.updateListeners(pos, state, state, 0);
-            } else if(stack.isEmpty() && !player.isSneaking()) {
+            } else if (!pedestalBlockEntity.isEmpty() && stack.isEmpty() && !player.isSneaking()) {
                 ItemStack stackOnPedestal = pedestalBlockEntity.getStack(0);
                 player.setStackInHand(Hand.MAIN_HAND, stackOnPedestal);
                 world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
@@ -81,6 +81,8 @@ public class PedestalBlock extends BlockWithEntity implements BlockEntityProvide
                 pedestalBlockEntity.clear();
                 stack.increment(1);
                 world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
+            } else if(player.isSneaking() && !world.isClient()){
+                player.openHandledScreen(pedestalBlockEntity);
             }
         }
 
